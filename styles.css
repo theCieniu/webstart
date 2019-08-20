@@ -6,6 +6,11 @@
 body {
   margin: 0;
   padding: 0;
+  --darkaccent: #222222;
+  --lightaccent: #aaaaaa;
+  --bcgcolor: #eeeeee;
+  font-family: ;
+  color: var(--darkaccent);
 }
 
 /*======= A LINK DEFAULT CSS ===========
