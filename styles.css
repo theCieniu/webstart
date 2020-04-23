@@ -15,6 +15,10 @@ overflow-x: hidden;
   color: var(--darkaccent);
 }
 
+img {
+  width: 100%;
+}
+
 /*======= A LINK DEFAULT CSS ===========*/
 a:link, a:visited {
   color: (internal value);
