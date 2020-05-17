@@ -7,11 +7,12 @@
 body {
   width: 100vw;
   overflow-x: hidden;
-  --dark: #222222;
-  --medium: #777777;
-  --light: #aaaaaa;
-  --accent: #123456;
-  --bcgcolor: #eeeeee;
+  --dark: #111;
+  --medium: #666670;
+  --light: #fff;
+  --color1: #9cce40;
+  --color2: #32c8b3;
+  --bcgcolor: #c3c3c3;
   font-family: ;
   color: var(--dark);
 }
@@ -37,7 +38,13 @@ a:link:active, a:visited:active {
 /*======= SECTION ===========*/
 /*======= SECTION ===========*/
 /*======= SECTION ===========*/
-/*======= SECTION ===========*/
+
+/*======= FOOTER  ===========*/
+
+footer {
+  margin-top: auto;
+}
+
 /*======= MEDIA QUERY ===========*/
 @media (min-width:700px) {
   /*======= ================= ===========*/
