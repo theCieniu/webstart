@@ -1,18 +1,31 @@
+/*======= GLOBAL STYLES ===========*/
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  width: 100vw;
-  overflow-x: hidden;
+html {
+  font-size: 62.5%;
+  --header1: calc(2rem + 1vw);
+  --header2: calc(3.5rem + 1vw);
+  --header3: calc(3rem + 1vw);
+  --header4: calc(2.4rem + 1vw);
+  --text: calc(1.5rem + 1vw);
+  --header1: calc(2rem + 1vw);
   --dark: #111;
   --medium: #666670;
   --light: #fff;
   --color1: #9cce40;
   --color2: #32c8b3;
   --bcgcolor: #c3c3c3;
+  --white: white;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  font-size: var(--text);
   font-family: ;
   color: var(--dark);
 }
@@ -21,26 +34,69 @@ img {
   width: 100%;
 }
 
+ul {
+  list-style: none;
+}
+
 a:link, a:visited {
   color: (internal value);
   text-decoration: none;
   cursor: auto;
 }
 
-a:link:active, a:visited:active {
+a:hover, a:focus, a:link:active, a:visited:active {
   color: (internal value);
 }
 
+.flex-row, .flex-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
+  }
+
+
 /*======= TYPOGRAPHY ===========*/
+
+h1 {
+  font-size: var(--header1);
+}
+
+h2 {
+  font-size: var(--header2);
+}
+
+h3 {
+  font-size: var(--header3);
+}
+
+h4 {
+  font-size: var(--header4);
+}
+
+
+
+
+
+
+
 /*======= NAVIGATION ===========*/
-/*======= SECTION ===========*/
-/*======= SECTION ===========*/
-/*======= SECTION ===========*/
-/*======= SECTION ===========*/
-/*======= SECTION ===========*/
 
+
+
+
+
+
+
+/*======= SECTION ===========*/
+/*======= SECTION ===========*/
+/*======= SECTION ===========*/
+/*======= SECTION ===========*/
+/*======= SECTION ===========*/
 /*======= FOOTER  ===========*/
-
 footer {
   margin-top: auto;
 }
