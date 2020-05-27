@@ -42,6 +42,7 @@ a:link, a:visited {
   color: (internal value);
   text-decoration: none;
   cursor: auto;
+  transition: color 0.5s ease-in-out;
 }
 
 a:hover, a:focus, a:link:active, a:visited:active {
@@ -56,11 +57,9 @@ a:hover, a:focus, a:link:active, a:visited:active {
 
 .flex-col {
   flex-direction: column;
-  }
-
+}
 
 /*======= TYPOGRAPHY ===========*/
-
 h1 {
   font-size: var(--header1);
 }
@@ -77,28 +76,48 @@ h4 {
   font-size: var(--header4);
 }
 
+/*======= NAVIGATION BURGER ===========*/
+#burger {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
 
+.burger {
+  padding: 0.15rem 1.6rem;
+  margin: 0.6rem 0;
+  background-color: var(--dark);
+  display: block;
+  transition: all 0.5s ease;
+}
 
+.b1 {
+  transform: rotateZ(45deg) translateY(420%);
+}
 
+.b2 {
+  opacity: 0;
+}
 
+.b3 {
+  transform: rotateZ(-45deg) translateY(-420%);
+}
 
+.mobile-menu {
+  display: block;
+}
 
 /*======= NAVIGATION ===========*/
-
-
-
-
-
-
-
-/*======= SECTION ===========*/
-/*======= SECTION ===========*/
+/*======= HERO SECTION ===========*/
 /*======= SECTION ===========*/
 /*======= SECTION ===========*/
 /*======= SECTION ===========*/
 /*======= FOOTER  ===========*/
 footer {
   margin-top: auto;
+  text-align: center;
 }
 
 /*======= MEDIA QUERY ===========*/
