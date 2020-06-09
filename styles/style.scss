@@ -1,15 +1,10 @@
-$text: calc(1.5rem + 1vw);
-$header1: calc(2rem + 1vw);
-$header2: calc(3.5rem + 1vw);
-$header3: calc(3rem + 1vw);
-$header4: calc(2.4rem + 1vw);
-$header5: calc(2rem + 1vw);
-
 $dark: #111;
 $medium: #666670;
 $light: #c3c3c3;
 $color1: #9cce40;
+$color1a: #87b242;
 $color2: #32c8b3;
+$color3: #c89819;
 $whitish: #fffff5;
 
 @mixin flex($direction, $justify) {
@@ -42,7 +37,7 @@ body {
   width: 100vw;
   overflow-x: hidden;
   color: $dark;
-  font-size: $text;
+  font-size: calc(1.5rem + 1vw);
 }
 
 img {
@@ -70,17 +65,20 @@ a:visited:active {
 
 /*======= TYPOGRAPHY ===========*/
 h1 {
-  font-size: var(--header1);
+  font-size: calc(2rem + 1vw);
 }
 
 h2 {
-  font-size: var(--header2);
+  font-size: calc(3.5rem + 1vw);
 }
 
 h3 {
-  font-size: var(--header3);
+  font-size: calc(3rem + 1vw);
 }
 
 h4 {
-  font-size: var(--header4);
+  font-size: calc(2.4rem + 1vw);
+}
+h5 {
+  font-size: calc(2rem + 1vw);
 }
