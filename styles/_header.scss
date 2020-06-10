@@ -1,11 +1,27 @@
-/*======= NAVIGATION ===========*/
 nav {
+  min-height: 10vh;
+  width: 100%;
+  padding: 0 5vw;
+  @include flex(row, space-between, center);
+  flex-wrap: wrap;
+  background-color: $dark;
+  color: $white;
+  h1 {
+    margin: 1rem 2rem 1rem 0;
+  }
   ul {
-    @include flex(row, space-between);
+    @include flex(row, space-around, center);
+    li {
+      margin: 1rem 0 1rem 3em;
+    }
   }
 }
 
-/*======= NAVIGATION BURGER ===========*/
+#burger {
+  display: none;
+}
+
+/*======= NAVIGATION BURGER ===========
 #burger {
   display: block;
   position: absolute;
@@ -17,7 +33,7 @@ nav {
 .burger {
   padding: 0.15rem 1.6rem;
   margin: 0.6rem 0;
-  background-color: var(--dark);
+  background-color: &dark;
   display: block;
   transition: all 0.5s ease;
 }
@@ -37,3 +53,4 @@ nav {
 .mobile-menu {
   display: block;
 }
+*/

@@ -6,17 +6,14 @@ $color1a: #87b242;
 $color2: #32c8b3;
 $color3: #c89819;
 $whitish: #fffff5;
+$white: #fff;
 
-@mixin flex($direction, $justify) {
+@mixin flex($direction, $justify, $align) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
-  align-items: center;
+  align-items: $align;
 }
-
-@import "header";
-@import "footer";
-@import "responsive";
 
 /*======= GLOBAL STYLES ===========*/
 
@@ -37,22 +34,21 @@ body {
   width: 100vw;
   overflow-x: hidden;
   color: $dark;
-  font-size: calc(1.5rem + 1vw);
+  font-size: calc(1.5rem + 0.5vw);
 }
 
-img {
-  width: 100%;
+main {
+  min-height: 85vh;
 }
 
 ul {
   list-style: none;
 }
 
-a:link,
+a,
 a:visited {
-  color: (internal value);
+  color: $white;
   text-decoration: none;
-  cursor: pointer;
   transition: color 0.5s ease-in-out;
 }
 
@@ -60,7 +56,7 @@ a:hover,
 a:focus,
 a:link:active,
 a:visited:active {
-  color: (internal value);
+  color: $dark;
 }
 
 /*======= TYPOGRAPHY ===========*/
@@ -69,7 +65,8 @@ h1 {
 }
 
 h2 {
-  font-size: calc(3.5rem + 1vw);
+  font-size: calc(3rem + 3vw);
+  line-height: 1.2em;
 }
 
 h3 {
@@ -82,3 +79,9 @@ h4 {
 h5 {
   font-size: calc(2rem + 1vw);
 }
+
+/*================================*/
+
+@import "header";
+@import "footer";
+@import "responsive";
